@@ -160,8 +160,16 @@
       <div class="finance-wrapper item">
         <div class="icon"><img src="assets/images/icon/i1.png" alt=""></div>
         
+        <script>
+          function handleAbrirEmpresa() {
+            const message = document.getElementById("message")
+  
+            message.value = "Abrir minha empresa grátis"
+          }
+        </script>
+
         <div class="wrapper-content">
-          <h4><a href="#">Abrir minha empresa grátis</a></h4>
+          <h4><a href="#contact" onclick="handleAbrirEmpresa()">Abrir minha empresa grátis</a></h4>
           <p>Cuidados da burocracia pra você. Conte conosco desde o início.</p>
         </div>
         
@@ -176,8 +184,16 @@
       <div class="finance-wrapper item">
         <div class="icon"><img src="assets/images/icon/i2.png" alt=""></div>
         
+        <script>
+          function handleTrocaContabilidade() {
+            const message = document.getElementById("message")
+  
+            message.value = "Trocar de contabilidade"
+          }
+        </script>
+        
         <div class="wrapper-content">
-          <h4><a href="#">Trocar de contabilidade</a></h4>
+          <h4><a href="#contact" onclick="handleTrocaContabilidade()">Trocar de contabilidade</a></h4>
           <p>Já tem uma empresa? Cuidamos de todas as obrigações por você.</p>
         </div>
         
@@ -192,8 +208,16 @@
       <div class="finance-wrapper item">
         <div class="icon"><img src="assets/images/icon/i3.png" alt=""></div>
         
+        <script>
+          function handleMigrarRegime() {
+            const message = document.getElementById("message")
+  
+            message.value = "Migrar regime MEI para ME"
+          }
+        </script>
+        
         <div class="wrapper-content">
-          <h4><a href="#">Migrar regime MEI para Me</a></h4>
+          <h4><a href="#contact" onclick="handleMigrarRegime()">Migrar regime MEI para ME</a></h4>
           <p>Seu negócio cresceu? Fazemos a alteração do seu MEI para ME</p>
         </div>
         
@@ -208,7 +232,7 @@
   </div>
 </section>
 
-<section class="about-Company-Section section-padding">
+<section id="contact" class="about-Company-Section section-padding">
   <div class="container">
     <div class="section-title text-center">
       <h2>Entre em contato</h2>
@@ -221,12 +245,14 @@
 
           <script>
             function handleSubmit() {
-              const name = document.getElementById("name")
-              const email = document.getElementById("email")
-              const phone = document.getElementById("phone")
-              const message = document.getElementById("message")
+              const name = document.getElementById("name").value
+              const email = document.getElementById("email").value
+              const phone = document.getElementById("phone").value
+              const message = document.getElementById("message").value
 
-              console.log(name.value)
+              const textWhatsapp = `*Nome:* ${name}%0a*E-mail:* ${email}%0a%0a${message}`
+
+              window.open(`https://wa.me/+553125350337?text=${textWhatsapp}`, '_blank')
             }
           </script>
           
