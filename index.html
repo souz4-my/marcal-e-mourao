@@ -19,8 +19,26 @@
   <link href="assets/css/revolution/settings.css" rel="stylesheet">
   <link href="assets/css/offcanvas-menu.css" rel="stylesheet" type="text/css">
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-
   
+  <style>
+    .show-more {
+      display: none;
+    }
+
+    .small-bottom-padding {
+      padding-bottom: 12px !important;
+    }
+
+    .talk-to-consultant:hover {
+      color: white;
+      font-size: 110%;
+    }
+
+    .banner-link:hover {
+      color: #5bc0de !important;
+      font-size: 102% !important;
+    }
+  </style>
 </head>
 
 <body class="homePageOne">
@@ -49,7 +67,7 @@
                   </li>
                   
                   <li>
-                    <a href="https://wa.me/+553125350337" target="_blank">
+                    <a href="tel:+553125350337" target="_blank">
                       <i class="fa fa-volume-control-phone" aria-hidden="true"></i> 31 2535-0337
                     </a>
                   </li>
@@ -109,21 +127,72 @@
             <li data-transition="random" data-title="Slide Title" data-param1="Additional Text" data-thumb="assets/images/slider/slider-1.jpg">
               <img src="assets/images/slider/slider-1.jpg" alt="Sky" class="rev-slidebg">
               <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4" 
-              data-x="left" data-hoffset="0" 
-              data-y="top" data-voffset="300" 
-              data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>Contabilidade Moderna
-            </div>
+                data-x="left" data-hoffset="0" 
+                data-y="top" data-voffset="300" 
+                data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>Contabilidade Moderna
+              </div>
+              
+              <div class="tp-caption font-medium sfb tp-resizeme letter-space-5" 
+                data-x="left" data-hoffset="0" 
+                data-y="center" data-voffset="90" 
+                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>Temos A Solução Certa Para O Seu Negócio.
+              </div>
+          </li>
+        
+          <li data-transition="random" data-title="Slide Title" data-param1="Additional Text" data-thumb="assets/images/slider/slider-1.jpg">
+            <a href="#our-services" onclick="handleShowMoreAbrirEmpresa()">
+              <img src="assets/images/slider/slider-2.jpg" alt="Sky" class="rev-slidebg">
+              <div class="banner-link tp-caption sfr font-extra-bold tp-resizeme letter-space-4" data-x="left" data-hoffset="0" data-y="top" data-voffset="300" data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                Abrir Empresa Gratuitamente
+              </div>
             
-            <div class="tp-caption font-medium sfb tp-resizeme letter-space-5" 
-            data-x="left" data-hoffset="0" 
-            data-y="center" data-voffset="90" 
-            data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>Temos A Solução Certa Para O Seu Negócio.
-          </div>
-        </li>
-      </ul>
+              <div class="tp-caption font-medium sfb tp-resizeme letter-space-5" data-x="left" data-hoffset="0" data-y="center" data-voffset="90" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                Abrimos sua empresa em até 10 dias, sem custo e sem você precisar sair de casa.
+              </div>
+            </a>
+          </li>
+
+          <li data-transition="random" data-title="Slide Title" data-param1="Additional Text" data-thumb="assets/images/slider/slider-1.jpg">
+            <a href="#our-services" onclick="handleShowMoreTrocaContabilidade()">
+              <img src="assets/images/slider/slider-3.jpg" alt="Sky" class="rev-slidebg">
+              <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4" data-x="left" data-hoffset="0" data-y="top" data-voffset="300" data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                Trocar de Contabilidade
+              </div>
+            
+              <div class="tp-caption font-medium sfb tp-resizeme letter-space-5" data-x="left" data-hoffset="0" data-y="center" data-voffset="70" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                Precisa trocar de contador? Deixe tudo com a gente;
+              </div>
+
+              <div class="tp-caption font-medium sfb tp-resizeme letter-space-5" data-x="left" data-hoffset="0" data-y="center" data-voffset="94" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                Venha para a contabilidade digital;
+              </div>
+
+              <div class="tp-caption font-medium sfb tp-resizeme letter-space-5" data-x="left" data-hoffset="0" data-y="center" data-voffset="118" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                A planos partir de R$150/mês com contador exclusivo e atendimento ilimitado.
+              </div>
+            </a>
+          </li>
+
+          <li data-transition="random" data-title="Slide Title" data-param1="Additional Text" data-thumb="assets/images/slider/slider-1.jpg">
+            <a href="#our-services" onclick="handleShowMoreMigrarMEIParaME()">
+              <img src="assets/images/slider/slider-2.jpg" alt="Sky" class="rev-slidebg">
+              <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4" data-x="left" data-hoffset="0" data-y="top" data-voffset="300" data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                Migrar MEI para ME
+              </div>
+            
+              <div class="tp-caption font-medium sfb tp-resizeme letter-space-5" data-x="left" data-hoffset="0" data-y="center" data-voffset="94" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                Seu negócio cresceu? Conte conosco nesta nova etapa!
+              </div>
+
+              <div class="tp-caption font-medium sfb tp-resizeme letter-space-5" data-x="left" data-hoffset="0" data-y="center" data-voffset="118" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                Nós fazemos a mudança da sua empresa na Receita Federal, Junta Comercial e Prefeitura.
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <section class="about-office-section">
   <div id="about" class="container">
@@ -162,14 +231,32 @@
         <script>
           function handleAbrirEmpresa() {
             const message = document.getElementById("message")
-  
-            message.value = "Abrir minha empresa grátis"
+            
+            message.value = "Abrir Empresa Gratuitamente"
+          }
+
+          function handleShowMoreAbrirEmpresa() {
+            const showMoreAbrirEmpresaEl = document.getElementById('showMoreAbrirEmpresa')
+
+            showMoreAbrirEmpresaEl.classList.toggle('show-more')
           }
         </script>
+        
+        <div id="abrirEmpresa" class="wrapper-content">
+          <h4><a onclick="handleShowMoreAbrirEmpresa()">Abrir Empresa Gratuitamente</a></h4>
+          <p class="small-bottom-padding">Abrimos sua empresa em até 10 dias, sem custo e sem você precisar sair de casa;</p>
+          <p id="showMoreAbrirEmpresa" class="show-more">
+            Nós geramos o contrato social, processos da receita federal, junta comercial e prefeitura.
+            Você paga a taxa de registro e tem seu CNPJ* sem sair de casa;
+            Garantimos que sua empresa fique 100% regularizada e pagando o mínimo de imposto;
+            Temos assessor dedicado e especializado no seu segmento, que além de emitir suas notas fiscais, dá suporte na gestão da sua empresa.
+            *Não incluso taxas de registro.
+            *Necessário certificado digital.
+          </p>
 
-        <div class="wrapper-content">
-          <h4><a href="#contact" onclick="handleAbrirEmpresa()">Abrir minha empresa grátis</a></h4>
-          <p>Cuidados da burocracia pra você. Conte conosco desde o início.</p>
+          <p>
+            <a href="#contact" onclick="handleAbrirEmpresa()" class="talk-to-consultant">Fale com um consultor</a>
+          </p>
         </div>
         
         <div class="hover">
@@ -186,14 +273,28 @@
         <script>
           function handleTrocaContabilidade() {
             const message = document.getElementById("message")
-  
+            
             message.value = "Trocar de contabilidade"
+          }
+
+          function handleShowMoreTrocaContabilidade() {
+            const showMoreTrocaContabilidadeEl = document.getElementById('showMoreTrocaContabilidade')
+
+            showMoreTrocaContabilidadeEl.classList.toggle('show-more')
           }
         </script>
         
         <div class="wrapper-content">
-          <h4><a href="#contact" onclick="handleTrocaContabilidade()">Trocar de contabilidade</a></h4>
-          <p>Já tem uma empresa? Cuidamos de todas as obrigações por você.</p>
+          <h4><a onclick="handleShowMoreTrocaContabilidade()">Trocar de contabilidade</a></h4>
+          <p class="small-bottom-padding">Planos personalizados para cada tipo de negócio e perfil de empreendedor;</p>
+          <p id="showMoreTrocaContabilidade" class="show-more">
+            Você escolhe a forma de atendimento: por telefone, WhatsApp ou e-mail;
+            Cuidamos de todo o processo de migração para você não ter que se preocupar com nada.
+          </p>
+
+          <p>
+            <a href="#contact" onclick="handleTrocaContabilidade()" class="talk-to-consultant">Fale com um consultor</a>
+          </p>
         </div>
         
         <div class="hover">
@@ -208,16 +309,31 @@
         <div class="icon"><img src="assets/images/icon/i3.png" alt=""></div>
         
         <script>
-          function handleMigrarRegime() {
+          function handleMigrarMEIParaMe() {
             const message = document.getElementById("message")
-  
+            
             message.value = "Migrar regime MEI para ME"
+          }
+
+          function handleShowMoreMigrarMEIParaME() {
+            const showMoreMigrarMEIParaMEEl = document.getElementById('showMoreMigrarMEIParaME')
+
+            showMoreMigrarMEIParaMEEl.classList.toggle('show-more')
           }
         </script>
         
         <div class="wrapper-content">
-          <h4><a href="#contact" onclick="handleMigrarRegime()">Migrar regime MEI para ME</a></h4>
-          <p>Seu negócio cresceu? Fazemos a alteração do seu MEI para ME</p>
+          <h4><a onclick="handleShowMoreMigrarMEIParaME()">Migrar MEI para ME</a></h4>
+          <p class="small-bottom-padding">Nós vamos avaliar e repassar sobre as possibilidades em relação às alterações. Será informado sobre todas as alterações e custos envolvidos.</p>
+          <p id="showMoreMigrarMEIParaME" class="show-more">
+            Não se preocupe somos especialistas;
+            Pronto podemos assumir as tarefas de desenquadramento do seu MEI. Será comunicado de todos processos. Tudo como muita transparência para que não perca nada do que está acontecendo;
+            Para finalizar vamos cuida de todas as etapas de todas os órgãos legais devido e te comunica. Podemos focar e te dar todo suporte para que possa continuar a crescer.
+          </p>
+
+          <p>
+            <a href="#contact" onclick="handleMigrarMEIParaMe()" class="talk-to-consultant">Fale com um consultor</a>
+          </p>
         </div>
         
         <div class="hover">
@@ -241,16 +357,16 @@
       <div class="col-md-12">
         <div class="quote-section">
           <h3 id="contact-header">Faça seu orçamento</h3>
-
+          
           <script>
             function handleSubmit() {
               const name = document.getElementById("name").value
               const email = document.getElementById("email").value
               const phone = document.getElementById("phone").value
               const message = document.getElementById("message").value
-
+              
               const textWhatsapp = `*Nome:* ${name}%0a*E-mail:* ${email}%0a%0a${message}`
-
+              
               window.open(`https://wa.me/+553125350337?text=${textWhatsapp}`, '_blank')
             }
           </script>
@@ -273,7 +389,7 @@
               
               <input id="phone" name="name" type="text" class="form-control"  required="" placeholder="Telefone">
             </div>
-                        
+            
             <div class="form-group">
               <i class="fa fa-comment-o" aria-hidden="true"></i>
               
@@ -306,9 +422,11 @@
               </li>
               
               <li><i class="fa fa-phone" aria-hidden="true"></i> 
-                <div class="content">
-                  +55 (31) 2535-0337
-                </div>
+                <a href="tel:+553125350337" target="_blank">
+                  <div class="content">
+                    +55 (31) 2535-0337
+                  </div>
+                </a>
               </li>
               
               <li><i class="fa fa-clock-o" aria-hidden="true"></i> 
