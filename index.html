@@ -38,6 +38,69 @@
       color: #5bc0de !important;
       font-size: 102% !important;
     }
+
+    .align-items-center {
+      align-items: center !important;
+      display: flex;
+    }
+
+    .bring-your-company {
+      padding: 0px;
+    }
+    
+    .bring-your-company .container {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+    .bring-your-company .row {
+      margin-bottom: 35px;
+      margin-top: 70px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .bring-your-company {
+        padding-top: 0;
+      }
+      
+      .bring-your-company .container {
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .bring-your-company .content {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media only screen and (max-width: 479px) {
+      .bring-your-company .content {
+        margin-bottom: 30px;
+      }
+    }
+
+    .bring-your-company .content p,
+    .bring-your-company .content li {
+      margin-bottom: 12px;
+      line-height: 26px;
+      font-weight: 300;
+      color: #6a6a6a;
+      font-size: 16px;
+    }
+
+    .bring-your-company .caption img {
+      max-width: 100%;
+    }
+
+    .bring-your-company .bold {
+      font-weight: 500 !important;
+    }
+
+    .bring-your-company .small-margin {
+      margin-bottom: 6px !important;
+    }
   </style>
 </head>
 
@@ -481,7 +544,36 @@
   </div>
 </section>
 
+<section class="bring-your-company">
+  <div id="bring-your-company" class="container text-center">
+    <div class="section-title">
+      <h2>Traga sua empresa</h2>
+    </div>
 
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="caption text-center wow slideInRight">
+          <img src="assets/images/slider-4.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="content text-left">
+          <p>Veja como e simples</p>
+          
+          <ul>
+            <li class="bold small-margin">CADASTRO:</li>
+            <li>Faça seu cadastro para que nossa equipe possa verificar se é possível realizar a migração da sua empresa para a Contabilizei.</li>
+            <li class="bold small-margin">DOCUMENTAÇÃO:</li>
+            <li>Todo atendimento será personalizado e nosso time Experts cuidará do processo de migração, usando seu CNPJ ou entrando em contato com seu contador para que ele forneça a documentação da sua empresa.</li>
+            <li class="bold small-margin">MIGRAÇÃO CONCLUÍDA:</li>
+            <li>Agora sua empresa já faz parte da Marçal Mourão. Agendaremos algumas reuniões com você para conhecer mais a rotina da sua empresa e te assessorar da melhor maneira possível.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="contact" class="about-Company-Section section-padding">
   <div class="container">
