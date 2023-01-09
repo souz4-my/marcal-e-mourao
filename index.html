@@ -39,8 +39,8 @@
       font-size: 102% !important;
     }
 
-    .align-items-center {
-      align-items: center !important;
+    .align-items-end {
+      align-items: flex-end !important;
       display: flex;
     }
 
@@ -82,12 +82,19 @@
     }
 
     .bring-your-company .content p,
+    .bring-your-company .content h3,
     .bring-your-company .content li {
       margin-bottom: 12px;
       line-height: 26px;
       font-weight: 300;
       color: #6a6a6a;
       font-size: 16px;
+    }
+
+    .bring-your-company .content h3 {
+      margin-bottom: 24px;
+      font-weight: 400;
+      font-size: 24px;
     }
 
     .bring-your-company .caption img {
@@ -101,6 +108,25 @@
     .bring-your-company .small-margin {
       margin-bottom: 6px !important;
     }
+
+    .finance-wrapper .wrapper-content {
+      border: none !important;
+    }
+
+    .owl-stage {
+      display: flex !important;
+    }
+
+    .owl-stage .owl-item  {
+      border-bottom: 4px solid #48c7ec;
+    }
+    
+    .owl-stage .owl-item .item {
+      margin: 35px 0px 0px 0px;
+      padding: 0px 5px;
+      height: 100%;
+    }
+
   </style>
 </head>
 
@@ -550,7 +576,7 @@
       <h2>Traga sua empresa</h2>
     </div>
 
-    <div class="row align-items-center">
+    <div class="row align-items-end">
       <div class="col-md-6">
         <div class="caption text-center wow slideInRight">
           <img src="assets/images/slider-4.jpg" alt="">
@@ -559,7 +585,7 @@
 
       <div class="col-md-6">
         <div class="content text-left">
-          <p>Veja como e simples</p>
+          <h3>Veja como e simples</h3>
           
           <ul>
             <li class="bold small-margin">CADASTRO:</li>
