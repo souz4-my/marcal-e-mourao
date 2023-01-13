@@ -159,12 +159,91 @@
         right: 0px;
         left: 0px;
       }
+    }
 
+    @media only screen and (max-width: 1140px) {
+      .header-section  .navbar.sticky {
+        margin: 0px;
+      }
+      
+      .header-section .navbar {
+        background-color: #ffffff;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 1;
+        left: 0px;
+        top: 0px;
+      }
+
+      .header-section .navbar-inner .container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        padding: 0px;
+        margin: 0px;
+        z-index: 2;
+      }
+
+      .header-section .navbar-inner .container .navbar-header .navbar-brand {
+        margin-bottom: 24px;
+      }
+
+      .header-section .navbar-inner .container .navbar-collapse .navbar-nav {
+        display: flex!important;
+        flex-direction: column;
+        
+      }
+
+      .header-section .navbar-inner .container .navbar-collapse .navbar-nav li {
+        margin: 0;
+      }
+
+      .header-section .navbar-inner .container .navbar-collapse .navbar-nav li a {
+        line-height: 60px !important;
+      }
+
+      .menu-toggle.sticky {
+        background-color: transparent;
+      }
+
+      .collapse {
+        display: block !important;
+      }
+
+      .navbar-collapse {
+        border: none;
+      }
+
+      body.open-menu .menu-toggle i {
+        background-color: transparent;
+        color: #222222;
+      }
+
+      body.open-menu {
+        max-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden;
+      }
+
+      body.open-menu .hidden-sm,
+      body.open-menu .hidden-xs {
+        display: block !important;
+      }
     }
   </style>
+
+  <script>
+    function toggleMenu() {
+      const element = document.getElementById('body')
+
+      element.classList.toggle("open-menu");
+    }
+  </script>
 </head>
 
-<body class="homePageOne">
+<body id="body" class="homePageOne">
   <div id="preloader">
     <div class="preloader">
       <span></span>
@@ -175,7 +254,7 @@
     </div>
   </div>
   
-  <header class="header-section">
+  <header id="home" class="header-section">
     <div class="topper">
       <div class="top-bar">
         <div class="container">
@@ -223,13 +302,13 @@
             
             <div class="collapse navbar-collapse navbar-right">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#home">Home</a></li>
+                <li><a onclick="toggleMenu()" href="#home">Home</a></li>
                 
-                <li><a href="#about">A empresa</a></li>
+                <li><a onclick="toggleMenu()" href="#about">A empresa</a></li>
                 
-                <li><a href="#solutions">Soluções</a></li> 
+                <li><a onclick="toggleMenu()" href="#solutions">Soluções</a></li> 
 
-                <li><a href="#our-services">Nossos Serviços</a></li>
+                <li><a onclick="toggleMenu()" href="#our-services">Nossos Serviços</a></li>
                 
                 <li>
                   <a class="btn btn-info" href="https://wa.me/+553125350337" target="_blank" style="display: inline; padding: 1rem; color: #ffffff">
@@ -760,7 +839,13 @@
     </div>
   </footer>
   
-  <span class="menu-toggle navbar visible-xs visible-sm"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  <span class="menu-toggle navbar visible-xs visible-sm">
+    <i 
+      class="fa fa-bars"
+      aria-hidden="true"
+      onclick="toggleMenu()"
+    ></i>
+  </span>
   
   <div id="toTop" class="hidden-xs">
     <i class="fa fa-chevron-up"></i>
